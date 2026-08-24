@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Pipeline ETL automatise">
+  <defs>
+    <radialGradient id="p8glow" cx="30%" cy="0%" r="85%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity=".38"/>
+      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="p8arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#0ea5e9"/>
+    </marker>
+  </defs>
+  <rect width="800" height="480" fill="#121212"/>
+  <rect width="800" height="480" fill="url(#p8glow)"/>
+  <g fill="none" stroke="#0ea5e9" stroke-width="3" marker-end="url(#p8arrow)" opacity=".8">
+    <path d="M215 250 H275"/>
+    <path d="M425 250 H485"/>
+  </g>
+  <g fill="#0f0f0f" stroke="#0ea5e9" stroke-width="2.5">
+    <rect x="65" y="195" width="150" height="110" rx="14"/>
+    <rect x="275" y="195" width="150" height="110" rx="14"/>
+    <rect x="485" y="195" width="150" height="110" rx="14"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+    <text x="140" y="245" font-size="30" font-weight="700" fill="#0ea5e9">E</text>
+    <text x="140" y="280" font-size="14" fill="#c6c8c9">Extract</text>
+    <text x="350" y="245" font-size="30" font-weight="700" fill="#0ea5e9">T</text>
+    <text x="350" y="280" font-size="14" fill="#c6c8c9">Transform</text>
+    <text x="560" y="245" font-size="30" font-weight="700" fill="#0ea5e9">L</text>
+    <text x="560" y="280" font-size="14" fill="#c6c8c9">Load</text>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".35" stroke-width="2">
+    <ellipse cx="700" cy="210" rx="46" ry="16"/>
+    <path d="M654 210 V290 a46 16 0 0 0 92 0 V210"/>
+    <path d="M654 250 a46 16 0 0 0 92 0"/>
+  </g>
+  <path d="M635 250 H654" fill="none" stroke="#0ea5e9" stroke-width="3" marker-end="url(#p8arrow)" opacity=".8"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".25" stroke-width="2" stroke-dasharray="6 8">
+    <path d="M140 340 V385 H560 V340"/>
+  </g>
+  <text x="350" y="410" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#c6c8c9" text-anchor="middle">execution automatisee</text>
+  <text x="60" y="60" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Pipeline ETL</text>
+  <text x="60" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#0ea5e9">Python &#183; Automatisation</text>
+</svg>

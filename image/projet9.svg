@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-label="Interface front-end React responsive">
+  <defs>
+    <radialGradient id="p9glow" cx="50%" cy="0%" r="85%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity=".38"/>
+      <stop offset="70%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="480" fill="#121212"/>
+  <rect width="800" height="480" fill="url(#p9glow)"/>
+  <rect x="60" y="130" width="430" height="290" rx="14" fill="#0f0f0f" stroke="#0ea5e9" stroke-width="2.5"/>
+  <path d="M60 172 H490" stroke="#ffffff" stroke-opacity=".14" stroke-width="2"/>
+  <g fill="#0ea5e9" opacity=".7">
+    <circle cx="86" cy="151" r="5"/><circle cx="104" cy="151" r="5"/><circle cx="122" cy="151" r="5"/>
+  </g>
+  <g fill="#0ea5e9">
+    <rect x="86" y="196" width="170" height="14" rx="7" opacity=".85"/>
+    <rect x="86" y="222" width="110" height="10" rx="5" opacity=".40"/>
+    <rect x="86" y="258" width="112" height="76" rx="10" opacity=".22"/>
+    <rect x="212" y="258" width="112" height="76" rx="10" opacity=".22"/>
+    <rect x="338" y="258" width="112" height="76" rx="10" opacity=".22"/>
+    <rect x="86" y="360" width="96" height="30" rx="15"/>
+  </g>
+  <rect x="546" y="150" width="146" height="250" rx="20" fill="#0f0f0f" stroke="#0ea5e9" stroke-width="2.5"/>
+  <path d="M596 166 H642" stroke="#ffffff" stroke-opacity=".25" stroke-width="4" stroke-linecap="round"/>
+  <g fill="#0ea5e9">
+    <rect x="566" y="196" width="80" height="12" rx="6" opacity=".85"/>
+    <rect x="566" y="220" width="106" height="52" rx="8" opacity=".22"/>
+    <rect x="566" y="282" width="106" height="52" rx="8" opacity=".22"/>
+    <rect x="566" y="352" width="66" height="24" rx="12"/>
+  </g>
+  <text x="60" y="60" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700" fill="#ffffff">Interface responsive</text>
+  <text x="60" y="86" font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#0ea5e9">React &#183; UI/UX</text>
+</svg>
