@@ -1586,309 +1586,179 @@ input:focus {
     }
 }
 
-@media screen and (max-width:1400px){
-    .menu li{
-        padding: 0px 10px;
+/* ==========================================================================
+   RESPONSIVE DESIGN (Media Queries)
+   ========================================================================== */
+
+@media screen and (max-width: 1200px) {
+    .hero {
+        padding-top: 120px !important;
+        gap: 20px;
     }
-    .menu li a{
-        font-size: 0.8rem;
-    }
-    .hero_title{
-        width: 70%;
-    }
-    .about_title{
-        gap: O;
-    }
-    .about_title h4{
-        margin-bottom: 25px;
-        width: 100%;
-    }
-    .portfolio_content p{
-        width: 90%;
-    }
-    
-    
-}
-
-
-
-
-
-
-
-@media screen and (max-width:1200px){
-    .section_title2 h3{
+    .hero_title h1 {
         font-size: 2.5rem;
     }
-    .section_title p{
-        font-size: 0.9rem;
-        line-height: 1.5rem;
+    .hero_title h3 {
+        font-size: 1.5rem;
     }
-    #toggle{
+    #maPersonne {
+        max-width: 280px;
+    }
+    .service_wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer_wrap {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section {
+        padding: 60px 5% !important;
+    }
+    #toggle {
         display: block;
     }
-    .menu{
+    .menu {
         height: 0;
         position: absolute;
         flex-direction: column;
         top: 100%;
-        left: 0%;
+        left: 0;
         width: 100%;
-        background-color: #1d1d1d96;
-        backdrop-filter: blur(10px);
+        background-color: rgba(22, 22, 24, 0.95);
+        backdrop-filter: blur(12px);
         overflow: hidden;
         opacity: 0;
-        transition: .6s;
+        transition: 0.4s ease;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-    .menu li{
+    .menu li {
         width: 100%;
-        padding: 20px 12%;
+        padding: 15px 8%;
     }
-    .active{
-        height: 400px;
+    .menu.active {
+        height: auto;
+        padding-bottom: 25px;
         opacity: 1;
     }
-    .hero_title{
-        width: 80%;
+    .hero {
+        flex-direction: column-reverse;
+        padding-top: 110px !important;
+        padding-bottom: 40px !important;
+        text-align: center;
+        gap: 30px;
     }
-    .hero_title h3{
-        font-size: 2.5rem;
+    .hero_title {
+        width: 100%;
+        align-items: center;
     }
-    .about_title h4{
-        font-size: 1.2rem;
-        line-height: 2.3rem;
-    }
-    .info span{
-        font-size: 0.5rem;
-    }
-    .counter img{
-        width: 15%;
-    }
-    .service_wrap{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .portfolio_content{
-        padding: 30px;
-    }
-    .portfolio_content img{
-        object-fit: cover;
-    }
-    .portfolio_content p{
+    .hero_image_container {
         width: 100%;
     }
-}
-
-@media screen and (max-width:900px){
-    .section{
-        flex-direction: column;
+    #maPersonne {
+        max-width: 250px;
+        margin: 0 auto;
     }
-    .section_image{
+    .hero_title h1 {
+        font-size: 2.2rem;
+    }
+    .hero_title h3 {
+        font-size: 1.3rem;
+    }
+    .hero_title p {
         width: 100%;
+        font-size: 0.95rem;
     }
-    .hero_title{
-        width: 100%;
-        padding-top: 17%;
+    .social_links {
+        justify-content: center;
     }
-    .hero_title h1{
-        font-size: 2.5rem;
+    .hero_btn {
+        justify-content: center;
     }
-    .hero_title h3{
-        font-size: 1rem;
+    .text {
+        justify-content: center;
     }
-    #span{
-        font-size: 0.5rem;
+    .text p {
+        padding: 0 10px;
     }
-    .slide h4{
-        font-size: 1.7rem;
-    }
-    .about_title h4{
-        width: 90%;
-    }
-    .about_title p{
-        width: 90%;
-    }
-    .portfolio_card{
+    .portfolio_card, .portfolio_card:nth-of-type(even) {
         flex-direction: column-reverse;
         height: auto;
     }
-    .portfolio_image{
+    .portfolio_image {
         width: 100%;
-        height: 260px;
+        height: 240px;
     }
-    .portfolio_content{
+    .portfolio_content {
         width: 100%;
+        padding: 25px 20px;
     }
-    .experience_wrap{
-        grid-template-columns: repeat(1,1fr);
+    .portfolio_content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
-    .portfolio_card:nth-of-type(even){
-        flex-direction: column-reverse;
+    .service_wrap {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
     }
-    .portfolio_info h3{
-        font-size: 1.5rem;
-        margin-bottom: 25px;
+    .skills_wrap {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
-    .portfolio_content p{
-        font-size: 0.6rem;
-        line-height: 1rem;
-    }
-    .footer_wrap{
-        grid-template-columns: repeat(2,1fr);
-        gap: 50px;
-    }
-}
-@media screen and (max-width:768px){
-    .section_title2 h3{
-        font-size: 2rem;
-        text-align: right center;
-    }
-    .hero{
-        background-position: left center;    
-    }
-    .hero_btn #maPersonne{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-    }
-    .hero_title h1{
-        font-size: 2rem;
-        text-align: right center;
-    }
-    .hero_title h3{
-        font-size: 0.6rem;
-        text-align: right center;
-    }
-    #span{
-        font-size: 0.3rem;
-        text-align: right center;
-    }
-    .hero_title p{
-        width: 80%;
-        text-align: right center;
-    }
-    .slide h4{
-        font-size: 1.4rem;
-    }
-    .about_title h4{
-        width: 100%;
-    }
-    .about_title h4{
-        width: 100%;
-    }
-    .about_title p{
-        width: 100%;
-    }
-    .service_wrap{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
-
-    .timeline-item {
-        left: -10px;
-        width: 100%;
-        transform: translateX(0);
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        margin: 0 auto;
-    }
-
-    .experience_wrap{
-        grid-template-columns: repeat(1,1fr);
-    }
-    .skills_wrap{
-        grid-template-columns: repeat(2,1fr);
-        gap: 45px;
+    .experience_wrap {
+        grid-template-columns: repeat(1, 1fr);
     }
     .contact_wrapper {
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
-
     .contact_info, .contact_form {
         width: 100%;
     }
-    .footer_wrap{
-        grid-template-columns: repeat(1.1fr);
-    }
 }
-@media screen and (max-width:500px){
-    .section_title2 h3{
-        font-size: 2rem;
-        text-align: right center;
-    }
-    .hero{
-        background-position: left center;
-    }
-    .hero_btn #maPersonne{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-    }
-    .hero_title h1{
-        font-size: 2rem;
-        text-align: right center;
-    }
-    .hero_title h3{
-        font-size: 0.6rem;
-        text-align: right center;
-    }
-    #span{
-        font-size: 0.3rem;
-        text-align: right center;
-    }
-    .section_title2{
-        flex-direction: column;
-        gap: 50px;
-        text-align: center;
-    }
-    .headings{
-        width: 100%;
-        text-align: center;
-    }
-    .hero_title{
-        padding-top: 20%;
-    }
-    .hero_title h1{
-        font-size: 2rem;
-    }
-    .hero_title h3{
-        font-size: 0.6rem;
-    }
-    #span{
-        font-size: 0.3rem;
-    }
-    .hero_title p{
-        width: 100%;
-        font-size: 0.5rem;
-    }
-    .timeline-title {
-        font-size: 1.2rem;
-    }
 
-    .timeline p {
-        font-size: 0.9rem;
+@media screen and (max-width: 600px) {
+    .hero_title h1 {
+        font-size: 1.8rem;
     }
-
-    .timeline {
-        padding: 10px 0;
+    .hero_title h3 {
+        font-size: 1.1rem;
     }
-    .slide h4{
-        font-size: 1rem;
+    #maPersonne {
+        max-width: 200px;
     }
-    .about_title h4{
-        font-size: 0.9rem;
+    .section_title2 h3 {
+        font-size: 1.8rem;
     }
-    .Counter_Wap{
+    .Counter_Wap {
         flex-direction: column;
+        gap: 25px;
     }
-    .skills_wrap{
-        grid-template-columns: repeat(1,1fr);
+    .skills_wrap {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .skill_container{
-        width: 40%;
-        margin: 0 auto;
+    .footer_wrap {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .form_row {
+        flex-direction: column;
+        gap: 0;
+    }
+    .form_groupe {
+        width: 100%;
+    }
+    .project-modal-box {
+        padding: 20px 15px;
+        max-height: 92vh;
+    }
+    .project-modal-title {
+        font-size: 1.3rem;
+    }
+    .main-image-container {
+        height: 220px;
     }
 }
 
@@ -1901,8 +1771,4 @@ input:focus {
         opacity: 1;
         transform: translateX(0px);
     }
-}
-
-.footer{
-    color: var(--while);
 }
